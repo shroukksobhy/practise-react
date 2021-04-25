@@ -20,6 +20,9 @@ import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import useStyles from "./styles";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import {Route, Link} from 'react-router-dom';
+import Repo from './Repo';
+
 function App() {
   const classes = useStyles();
   const value = 66;
@@ -42,6 +45,7 @@ function App() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div className="App">
+      <Route exact path="/repo" component={Repo} />
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
