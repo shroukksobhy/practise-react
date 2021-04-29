@@ -32,7 +32,8 @@ function App() {
       <AppBar position="relative">
         <Toolbar>
           <PhotoCameraIcon />
-          <Typography variant="h6">Helo My Guest</Typography>
+          <Typography variant="h6" >Helo My Guest</Typography>
+          <Link to='/'>Main Page</Link>
           <Link to='/repo'>Repo</Link>
           <Link to='/page2'>Page 2</Link>
 
